@@ -1,0 +1,228 @@
+.ls {
+    background: #001030;
+    color: white;
+    height: 75vh;
+}
+
+.ls-top {
+    padding: 20px;
+}
+
+.ls-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ls-nav .logo {
+    max-width: 140px;
+}
+
+.ls-nav .menu img {
+    max-height: 20px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.ls-nav .menu {
+    position: relative;
+    padding: 10px 0;
+}
+
+.menu .sub-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 130px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    display: none;
+}
+
+.sub-menu hr{
+    border: none;
+    height: 1px;
+    background: #a4a4a4;
+    margin: 8px 0;
+}
+.sub-menu p{
+    cursor: pointer;
+    font-size: 14px;
+}
+.menu:hover .sub-menu {
+    display: block;
+}
+
+.ls-search {
+    background-color: #002670;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    margin-top: 20px;
+}
+
+.ls-search img {
+    width: 16px;
+}
+
+.ls-search input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 11px;
+}
+
+.ls-search input::placeholder {
+    color: #c8c8c8;
+}
+
+.ls-list {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    overflow-y: scroll;
+}
+
+.friends {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.friends img {
+    width: 35px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+.friends div {
+    display: flex;
+    flex-direction: column;
+}
+
+.friends span {
+    color: #9f9f9f;
+    font-size: 11px;
+}
+
+.friends:hover {
+    background-color: #077EFF;
+}
+.friends:hover span {
+    color: white;
+}
+
+.add-user div {
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.add-user .add-icon {
+    width: 25px;
+}
+
+.friends.border img {
+    border: 3px solid #07fff3;
+}
+
+.friends.border div span {
+    color: #07fff3;
+}
+@media (max-width:900px) {
+    .ls{
+        width: 100%;
+    }
+}
+/* Sidebar styling */
+.sidebar {
+    background-color: #0b1624;
+    width: 250px;
+    min-height: 100vh;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  /* Logo container */
+  .logo-container {
+    margin-bottom: 20px;
+    width: 100%; /* Ensure the container takes full width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0; /* Added padding to prevent cutting */
+    overflow: hidden; /* Prevents overflow from cutting */
+  }
+  
+  /* Text-based logo */
+  .logo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px; /* Reduced size for a better fit */
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(90deg, #ffffff, #f7c89b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    padding: 5px 0;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Hover effect for logo */
+  .logo:hover {
+    transform: scale(1.05); /* Slightly enlarge the logo */
+    color: #ffebcd;
+  }
+  
+  /* Search input styling */
+  .search input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #132540;
+    color: #ffffff;
+    outline: none;
+  }
+  
+  /* Contact list styling */
+  .contact-list {
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #132540;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+    color: #ffffff;
+  }
+  
+  .contact-item:hover {
+    background-color: #1e2a45;
+  }
+  
+  .contact-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
